@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Profil Perkenalan Diri</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Pacifico&display=swap');
+
+  body {
+    background: linear-gradient(135deg, #fef9f9, #ffefef);
+    font-family: 'Comic Neue', cursive;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 420px;
+    margin: 50px auto;
+    background: #fff2f2;
+    border-radius: 30px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 16px rgba(255, 182, 193, 0.4);
+  }
+
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #ff3366;
+  }
+
+  p.intro {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 6px solid #ff99aa;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px #ff6881;
+    object-fit: cover;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .socials button {
+    background: #fff0f6;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 6px 12px rgba(255, 105, 135, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 28px;
+    color: #ff3366;
+  }
+
+  .socials button:hover {
+    background: #ff3366;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0 8px 18px rgba(255, 51, 102, 0.6);
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="asset/WhatsApp Image 2025-10-30 at 05.54.58.jpeg" alt="Avatar Perkenalan" class="avatar" />
+    <h1>Halo, Aku Wanda!</h1>
+    <p class="intro">
+      Aku suka warna pink, dan suka makan pedes.
+    </p>
+
+    <div class="socials">
+      <button id="btnTiktok" title="TikTok">🎵</button>
+      <button id="btnYoutube" title="YouTube">▶️</button>
+      <button id="btnInstagram" title="Instagram">📸</button>
+    </div>
+
+    <footer> Profil Wanda</footer>
+  </div>
+
+  <script>
+    const tiktokLink = 'https://www.tiktok.com/@c00lkidszj?_t=ZS-90xuVHmaUCr&_r=1';
+    const youtubeLink = 'https://youtube.com/@hyeriiiii7077?si=qn66cKFeIex7zRDK';
+    const instagramLink = 'https://www.instagram.com/_fl0oweerry?igsh=MTN0bW1xaG0wend6cw==';
+
+    document.getElementById('btnTiktok').addEventListener('click', () => {
+      window.open(tiktokLink, '_blank');
+    });
+
+    document.getElementById('btnYoutube').addEventListener('click', () => {
+      window.open(youtubeLink, '_blank');
+    });
+
+    document.getElementById('btnInstagram').addEventListener('click', () => {
+      window.open(instagramLink, '_blank');
+    });
+  </script>
+</body>
+</html>
